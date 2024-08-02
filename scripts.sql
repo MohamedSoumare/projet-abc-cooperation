@@ -10,7 +10,7 @@ CREATE TABLE customers(
    phone CHAR(15) NOT NULL UNIQUE
 );
 
--- Creation de la table customers
+-- Creation de la table purchase_ABC
 CREATE TABLE purchase_orders(
    id INT PRIMARY KEY NOT NULL auto_increment,
    order_date DATE NOT NULL,
