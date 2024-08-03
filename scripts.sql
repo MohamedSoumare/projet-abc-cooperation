@@ -1,5 +1,5 @@
-CREATE DATABASE ABC;
-USE ABC;
+CREATE DATABASE abc_cooperation;
+USE abc_cooperation;
 
 -- Creation de la table customers
 CREATE TABLE customers(
@@ -10,7 +10,7 @@ CREATE TABLE customers(
    phone CHAR(15) NOT NULL UNIQUE
 );
 
--- Creation de la table purchase_ABC
+-- Creation de la table purchase_orders
 CREATE TABLE purchase_orders(
    id INT PRIMARY KEY NOT NULL auto_increment,
    order_date DATE NOT NULL,
@@ -22,14 +22,15 @@ CREATE TABLE purchase_orders(
 -- Creation de la table products
 CREATE TABLE products(
    id INT PRIMARY KEY NOT NULL auto_increment,
-   name_product VARCHAR(50) NOT NULL,
+   name VARCHAR(50) NOT NULL,
    description VARCHAR(50) NOT NULL,
    stock INT NOT NULL,
-   price DECIMAL(10,2) NOT NULL
+   price DECIMAL(10,2) NOT NULL,
+ 
 );
 
 -- Creation de la table order details
-CREATE TABLE order_details(
+CREATE TABLE order_details (
    id INT PRIMARY KEY NOT NULL auto_increment,
    quantity INT NOT NULL,
    price DECIMAL(10,2) NOT NULL,
@@ -40,7 +41,7 @@ CREATE TABLE order_details(
 );
 
 
---   insertion des donnees la table client --
+-- Insertion des donnees la table client --
 
 INSERT INTO customers (id, name, address, email, phone) VALUES
 (1, 'John Doe', '123 Main St', 'john.doe@example.com', '123-456-7890'),
@@ -77,8 +78,7 @@ INSERT INTO customers (id, name, address, email, phone) VALUES
 
 --   insertion des donnees la table Product --
 
-
-INSERT INTO products (id, name_product, description, stock, price) VALUES
+INSERT INTO products (id, name, description, stock, price) VALUES
 (1, 'Product A', 'Description A', 100, 9.99),
 (2, 'Product B', 'Description B', 200, 19.99),
 (3, 'Product C', 'Description C', 150, 29.99),
@@ -143,7 +143,6 @@ INSERT INTO purchase_orders (id, order_date, delivery_address, customer_id) VALU
 (28, '2024-01-28', '777 Spruce Ave', 28),
 (29, '2024-01-29', '888 Redwood Ave', 29),
 (30, '2024-01-30', '999 Willow Ave', 30);
-
 
 
 --   insertion des donnees la table order details --
