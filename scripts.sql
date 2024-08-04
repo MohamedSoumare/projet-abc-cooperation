@@ -77,7 +77,6 @@ INSERT INTO customers (id, name, address, email, phone) VALUES
 
 
 --   insertion des donnees la table Product --
-
 INSERT INTO products (id, name, description, stock, price) VALUES
 (1, 'Product A', 'Description A', 100, 9.99),
 (2, 'Product B', 'Description B', 200, 19.99),
@@ -110,8 +109,8 @@ INSERT INTO products (id, name, description, stock, price) VALUES
 (29, 'Product CC', 'Description CC', 1500, 289.99),
 (30, 'Product DD', 'Description DD', 1550, 299.99);
 
---   insertion des donnees la table  purchase orders --
 
+--   insertion des donnees la table  purchase orders --
 INSERT INTO purchase_orders (id, order_date, delivery_address, customer_id) VALUES
 (1, '2024-01-01', '123 Main St', 1),
 (2, '2024-01-02', '456 Oak St', 2),
