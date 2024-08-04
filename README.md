@@ -6,17 +6,19 @@ ABC Corporation est une entreprise spécialisée dans l'importation et l'exporta
 
 ## Organisation du Projet
 
-Le projet est organisé en plusieurs phases, chacune correspondant à une étape clé dans la conception et la mise en œuvre de la base de données. Voici les principales étapes :
+Le projet est organisé en plusieurs phases, chacune correspondant à une étape clé dans la conception et 
+la mise en œuvre de la base de données. Voici les principales étapes :
 
 ### Analyse des Fichiers Excel
 
-- Identification des entités, attributs et relations.
-- Création d'un document de spécifications détaillant les entités et leurs relations.
-- Utilisation de Looping pour créer le MCD.
-- Application des règles de normalisation.
-- Conversion du MCD en MLD.
-- Validation des relations et des cardinalités.
-- Conversion du MLD en MPD.
+*** Identification des entités, attributs et relations : *** Examiner les fichiers Excel pour identifier les différents éléments de données.
+*** Création d'un document de spécifications : *** Document détaillant les entités et leurs relations.
+*** Utilisation de Looping pour créer le MCD : ***  Créer un Modèle Conceptuel de Données (MCD) à l'aide de Looping.
+*** Application des règles de normalisation : *** Assurer que la base de données respecte les normes de normalisation.
+*** Conversion du MCD en MLD : *** Transformer le Modèle Conceptuel de Données en Modèle Logique de Données (MLD).
+*** Validation des relations et des cardinalités : *** Vérifier la cohérence des relations et des cardinalités.
+*** Conversion du MLD en MPD : *** Transformer le Modèle Logique de Données en Modèle Physique de Données (MPD).
+
 
 ## Étapes pour Prendre en Main le Projet
 
@@ -47,7 +49,7 @@ git clone https://github.com/MohamedSoumare/projet-abc-cooperation
 
 # Exécution des Scripts SQL
 
-  1. Ouvrir le fichier des scripts SQL et exécuter les scripts fournis en suivant les instructions pour la création de la base de données, des tables et l'insertion des données.
+  1. Ouvrir le fichier de scripts SQL et exécuter les scripts fournis en suivant les instructions pour la création de la base de données, des tables et l'insertion des données.
 
 # Étape 1 : Création de la Base de Données
   
@@ -67,7 +69,7 @@ git clone https://github.com/MohamedSoumare/projet-abc-cooperation
 
 # Vérification et Validation
 
-  Vérifier la structure de la base de données et valider les données importées.
+  Vérifier la structure de la base de données et valider les données importées pour s'assurer qu'elles correspondent aux spécifications.
 
 # Points d'Amélioration
 
