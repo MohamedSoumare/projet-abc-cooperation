@@ -3,26 +3,26 @@ USE abc_cooperation;
 
 -- Creation de la table customers
 CREATE TABLE customers(
-   id INT PRIMARY KEY NOT NULL auto_increment,
-   name VARCHAR(50) NOT NULL,
+   id INT PRIMARY KEY  auto_increment,
+   customer_name VARCHAR(50) NOT NULL,
    address VARCHAR(50) NOT NULL,
    email VARCHAR(50) NOT NULL UNIQUE,
    phone CHAR(15) NOT NULL UNIQUE
 );
 
 -- Creation de la table purchase_orders
-CREATE TABLE purchase_orders(
-   id INT PRIMARY KEY NOT NULL auto_increment,
+CREATE TABLE purchaseOrders(
+   id INT PRIMARY KEY auto_increment,
    order_date DATE NOT NULL,
    delivery_address VARCHAR(50) NOT NULL,
-   customer_id INT NOT NULL,
+   customer_id INT NOT NULL, 
    FOREIGN KEY(customer_id) REFERENCES customers(id)
 );
 
 -- Creation de la table products
 CREATE TABLE products(
-   id INT PRIMARY KEY NOT NULL auto_increment,
-   name VARCHAR(50) NOT NULL,
+   id INT PRIMARY KEY auto_increment,
+   product_name VARCHAR(50) NOT NULL,
    description VARCHAR(50) NOT NULL,
    stock INT NOT NULL,
    price DECIMAL(10,2) NOT NULL,
@@ -30,12 +30,12 @@ CREATE TABLE products(
 );
 
 -- Creation de la table order details
-CREATE TABLE order_details (
-   id INT PRIMARY KEY NOT NULL auto_increment,
+CREATE TABLE orderDetails (
+   id INT PRIMARY KEY  auto_increment,
    quantity INT NOT NULL,
    price DECIMAL(10,2) NOT NULL,
    product_id INT NOT NULL,
-   order_id INT NOT NULL,
+   order_id INT  NOT NULL,
    FOREIGN KEY(product_id) REFERENCES products(id),
    FOREIGN KEY(order_id) REFERENCES purchase_orders(id)
 );
@@ -43,7 +43,7 @@ CREATE TABLE order_details (
 
 -- Insertion des donnees la table client --
 
-INSERT INTO customers (id, name, address, email, phone) VALUES
+INSERT INTO customers (id, customer_name, email, phone) VALUES
 (1, 'John Doe', '123 Main St', 'john.doe@example.com', '123-456-7890'),
 (2, 'Jane Smith', '456 Oak St', 'jane.smith@example.com', '234-567-8901'),
 (3, 'Alice Johnson', '789 Pine St', 'alice.johnson@example.com', '345-678-9012'),
@@ -77,7 +77,7 @@ INSERT INTO customers (id, name, address, email, phone) VALUES
 
 
 --   insertion des donnees la table Product --
-INSERT INTO products (id, name, description, stock, price) VALUES
+INSERT INTO products (id, product_name, description, stock, price) VALUES
 (1, 'Product A', 'Description A', 100, 9.99),
 (2, 'Product B', 'Description B', 200, 19.99),
 (3, 'Product C', 'Description C', 150, 29.99),
@@ -111,7 +111,7 @@ INSERT INTO products (id, name, description, stock, price) VALUES
 
 
 --   insertion des donnees la table  purchase orders --
-INSERT INTO purchase_orders (id, order_date, delivery_address, customer_id) VALUES
+INSERT INTO purchaseOrders (id, order_date, delivery_address, customer_id) VALUES
 (1, '2024-01-01', '123 Main St', 1),
 (2, '2024-01-02', '456 Oak St', 2),
 (3, '2024-01-03', '789 Pine St', 3),
@@ -146,7 +146,7 @@ INSERT INTO purchase_orders (id, order_date, delivery_address, customer_id) VALU
 
 --   insertion des donnees la table order details --
 
-INSERT INTO order_details (id, quantity, price, product_id, order_id) VALUES
+INSERT INTO orderDetails (id, quantity, price, product_id, order_id) VALUES
 (1, 10, 9.99, 1, 1),
 (2, 5, 19.99, 2, 2),
 (3, 7, 29.99, 3, 3),
