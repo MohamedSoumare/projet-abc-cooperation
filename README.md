@@ -23,7 +23,7 @@ Le projet est organisé en plusieurs phases, chacune correspondant à une étape
 
 #### Étapes pour Prendre en Main le Projet
 
-### Installation des outils nécessaires pour utitlusées le projet :
+Installation des outils nécessaires pour utitlusées le projet :
 
 - *** SGBDR *** : MySQL Server pour la gestion de la base de données. [mysql server](https://https://dev.mysql.com/downloads/installer/)
 - *** Looping *** : Utilisé pour créer et visualiser les modèles de données.
