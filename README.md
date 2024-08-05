@@ -9,7 +9,7 @@ ABC Corporation est une entreprise spécialisée dans l'importation et l'exporta
 Le projet est organisé en plusieurs phases, chacune correspondant à une étape clé dans la conception et la mise en œuvre de la base de données. Voici les principales étapes :
 
 - **Aanalyse de données** Ce  projet consiste à analyser les fichiers Excel existants, identifier les entités, attributs et relations, et concevoir une base de données relationnelle complète.
-- **Preparation de l'environnement de travail**, Cette étape a pour objectif d'avoir un environnement de travail, organiser avec des installation necessaire et de configuration.
+- **Preparation de l'environnement de travail**, Cette étape a pour objectif d'avoir un environnement de travail, organiser avec des installation et de configuration necessaire.
 - **Conception de la base de données**, Cette étape consiste à concevoir la structure de la base de données, incluant les tables, les champs, les clés primaires, les clés étrangères, les contraintes et les relations entre les tables.
 
 ## Structure
@@ -50,8 +50,8 @@ git clone https://github.com/MohamedSoumare/projet-abc-cooperation
 ```
 
 ### Exécution des Scripts SQL
-
-1. Ouvrir le fichier des scripts SQL et exécuter les scripts fournis en suivant les instructions pour la création de la base de données.
+ 
+ Ouvrir le fichier des scripts SQL et exécuter les scripts fournis en suivant les instructions pour la création de la base de données.
 
 *** Étape 1 : *** Création de la Base de Données
 
