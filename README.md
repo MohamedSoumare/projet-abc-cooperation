@@ -31,21 +31,17 @@ Le projet est organisé en plusieurs phases, chacune correspondant à une étape
 - *** Langage de modélisation *** : Merise.
 - *** Outil collaboratif *** : Excel (feuille de style) pour la gestion des données.
 
-Après l'installation de Mysql avec les configurations necessaires:
+Après l'installation de MySQL avec les configurations nécessaires, vérifier l'installation avec la commande suivante :
 
-### Pour Verification
-
-Tappez
-
-```mysql
+```bash
     mysql --version
 ```
+
 ### Pour importer la base de données 
 
 ### Cloner le Projet
 
  Pour cloner le dépôt Git contenant les fichiers de spécifications, modèles, et scripts SQL excuter la commande suivant:
-
 
 ```bash
 
